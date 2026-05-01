@@ -1,8 +1,10 @@
-from parentDD import ParentDD
+from parentDD import ParentDD, ChildTL
 
-parent_1 = ParentDD("Homer","Donuts","Watching TV")
-parent_2 = ParentDD("Marge","Pasta","Gardening")
+parent_1 = ParentDD("Homer", "Donuts", "Watching TV", "D'oh!", 39)
+parent_2 = ParentDD("Marge", "Pasta", "Gardening", "Hmm… I don't know, Homie.", 36)
 
-parent_2.introduce()
-parent_2.relax()
-parent_2.indulge()
+parent_1.speak()
+parent_2.speak()
+
+
+
