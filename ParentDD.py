@@ -14,8 +14,14 @@ class ChildTL(ParentDD):
     def __init__(self, name, food, hobby, catchphrase, age):
         super().__init__(name, food, hobby, catchphrase, age)
 
-        self.activities = {
-            "Bart": "Riding my skateboard",
-            "Lisa": "Reading my books",
-            "Maggie": "Sucking on my pacifier"
+        self.activity = {
+            "Bart": "riding my skateboard",
+            "Lisa": "reading my books",
+            "Maggie": "playing with my toys"
         }
+
+    def activity(self):
+        return self.activity.get(self.name, "Fortunately not in the Simpson family")
+    
+    def speak(self):
+        print(f"Hello my name is {self.name}, I am {self.age} years old, {self.catchphrase}, I loves {self.activity()}.")
