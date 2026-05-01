@@ -1,4 +1,4 @@
-from ParentDD import ParentDD
+from parentDD import ParentDD
 
 parent_1 = ParentDD("Homer","Donuts","Watching TV")
 parent_2 = ParentDD("Marge","Pasta","Gardening")
