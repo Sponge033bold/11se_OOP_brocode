@@ -11,4 +11,3 @@ class Car:
 
     def stop(self):
         print("The " + self.model + " has stopped")
-# example change
